@@ -1,0 +1,6 @@
+{
+  "name": "MS Precision Gas Enterprise System",
+  "description": "1974년 창립 이래 대한민국 산업을 선도해 온 (주)MS가스의 산업용·의료용·초고순도 특수가스 및 토탈 엔지니어링 솔루션 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
