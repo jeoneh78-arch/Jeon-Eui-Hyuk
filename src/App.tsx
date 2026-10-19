@@ -24,6 +24,7 @@ import { NoticeDetailModal } from './components/modals/NoticeDetailModal';
 import { CompanyIntroModal } from './components/modals/CompanyIntroModal';
 import { EsgProjectModal } from './components/modals/EsgProjectModal';
 import { LegalInfoModal } from './components/modals/LegalInfoModal';
+import { Chatbot } from './components/Chatbot';
 
 export default function App() {
   const [lang, setLang] = useState<'KOR' | 'ENG'>('KOR');
@@ -175,6 +176,14 @@ export default function App() {
           </button>
         </div>
       </aside>
+
+      {/* AI Gas Advisor Chatbot */}
+      <Chatbot
+        onOpenInquiry={handleOpenInquiry}
+        onOpenMsds={() => setMsdsModalOpen(true)}
+        onOpenBranches={() => setBranchesModalOpen(true)}
+        onOpenCatalog={() => handleOpenCatalog()}
+      />
 
       {/* Interactive Modal Dialogs */}
       <OnlineInquiryModal
